@@ -18,11 +18,11 @@
 - **head**标签：文档的头部描述了文档的各种属性和信息，包括文档的标题等。绝大多数文档头部包含的数据都不会真正作为内容显示给读者。以下标签可用在head部分
 	```html
 	<head>
-		<title>...</title>
+		<title>
 		<meta>
 		<link>
-		<style>...</style>
-		<script>...</script>
+		<style>
+		<script>
 	</head>
 	```
 
@@ -60,7 +60,7 @@
 	</style>
 	</head>
 	<body>
-    		<p>为了追寻他的<span>美国梦</span>，他搬入纽约附近一海湾居住。</p>
+    	<p>为了追寻他的<span>美国梦</span>，他搬入纽约附近一海湾居住。</p>
 	</body>
 	</html>
 	``` 
@@ -217,7 +217,7 @@ Markdown中输入以下代码，表格前会出现许多空行，解决方法是
 	```
 	> <a href="目标网址" target="_blank">click here!</a>
 
-- **mailto**标签：在网页中链接Email地址，能让访问者便捷向网站管理者发送电子邮件
+- **mailto**标签：在网页中链接Email地址，能让访问者便捷向网站管理者发送电子邮件。如果mailto后面同时有多个参数，第一个参数必须以“?”开头，后面的参数每一个都以“&”分隔。
 	```html
 	<!--浏览器自动调用默认邮件程序，并在收件人框中自动填上收件人地址-->
 	<a href="malito:yy@imooc.com">发送</a>
@@ -237,10 +237,9 @@ Markdown中输入以下代码，表格前会出现许多空行，解决方法是
 	<!--body添加邮件内容-->
 	<a href="malito:yy@imooc.com?body=欢迎来到慕课网">发送</a>
 	```
-如果mailto后面同时有多个参数，第一个参数必须以“?”开头，后面的参数每一个都以“&”分隔。
 	```html
-	<a href="malito:yy@imooc.com ? cc=imoocAdmin@imooc.com&bcc=pp@imooc.com
-	&subject=发送电子邮件&body=欢迎来到慕课网">发送</a>
+	<a href="malito:yy@imooc.com ? cc=imoocAdmin@imooc.com & bcc=pp@imooc.com
+	& subject=发送电子邮件 & body=欢迎来到慕课网">发送</a>
 	```
 
 ### 第四章 表单标签 ###
@@ -268,12 +267,6 @@ Markdown中输入以下代码，表格前会出现许多空行，解决方法是
   	<input type="password" name="pass">
 	</form>
 	```
-> <form>
-  姓名：
-  <input type="text" name="myName">
-  密码：
-  <input type="password" name="pass"><br>
-</form>
 
 - **文本域(textarea)**：支持多行文本输入
 	```html
@@ -285,10 +278,6 @@ Markdown中输入以下代码，表格前会出现许多空行，解决方法是
         	<textarea cols="50" rows="10" >在这里输入内容...</textarea>
 	</form>
 	```
-> <form  method="post" action="save.php">
-        <label>联系我们</label>
-        <textarea cols="50" rows="10" >在这里输入内容...</textarea><br>
-</form>
 
 - 单选框（radio）、复选框（checkbox）
 checked：当设置 checked="checked" 时，该选项被默认选中
@@ -309,17 +298,6 @@ checked：当设置 checked="checked" 时，该选项被默认选中
 		<input type="checkbox" name="checkbox4" value="健身">健身<br>
 	</form>
 	```
-> <form name="iForm" method="post" action="save.php">
-		你是否喜欢旅游？
-		<input type="radio" name="radiolove" value="喜欢" checked="checked">喜欢
-		<input type="radio" name="radiolove" value="不喜欢">不喜欢
-		<input type="radio" name="radiolove" value="无所谓">无所谓<br>
-		你对哪些运动感兴趣？
-		<input type="checkbox" name="checkbox1" value="跑步" checked="checked">跑步
-		<input type="checkbox" name="checkbox2" value="打球" checked="checked">打球
-		<input type="checkbox" name="checkbox3" value="登山">登山
-		<input type="checkbox" name="checkbox4" value="健身">健身<br>
-</form>
 
 - 下拉列表框（select)，节省空间
 可实现单选和多选（multiple），进行多选时按下Ctrl键同时进行单击
@@ -344,24 +322,7 @@ checked：当设置 checked="checked" 时，该选项被默认选中
     	</select>
 	</form>
 	```
-> <form action="save.php" method="post" >
-    <label>爱好:</label>
-    <select>
-      <option value="看书">看书</option>
-      <option value="旅游" selected="selected">旅游</option>
-      <option value="运动">运动</option>
-      <option value="购物">购物</option>
-    </select>
-</form>
-<form action="save.php" method="post" >
-    <label>爱好:</label>
-    <select multiple="multiple">
-      <option value="看书">看书</option>
-      <option value="旅游">旅游</option>
-      <option value="运动">运动</option>
-      <option value="购物">购物</option>
-    </select><br>
-</form>
+
 - 使用**提交按钮**，提交数据
 	```html
 	<input   type="submit"   value="提交">
@@ -389,11 +350,7 @@ checked：当设置 checked="checked" 时，该选项被默认选中
     	<input type="reset" value="重置" name="resetBtn" />
 	</form> 
 	```
-> <form  method="post" action="save.php">
-    <label for="myName">姓名：</label>
-    <input type="text" value=" " name="myName " />
-    <input type="reset" value="重置" name="resetBtn" /><br>
-</form> 
+ 
 - form表单中的**label标签**
 label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用户改进了可用性。
 当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上
@@ -408,11 +365,3 @@ label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用
   	<input type="email" id="email" placeholder="Enter email">
 	</form>
 	```
-> <form>
-  <label for="male">男</label>
-  <input type="radio" name="gender" id="male" />
-  <label for="female">女</label>
-  <input type="radio" name="gender" id="female" />
-  <label for="email">输入你的邮箱地址</label>
-  <input type="email" id="email" placeholder="Enter email">
-</form>
