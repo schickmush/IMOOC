@@ -358,3 +358,5 @@ checked：当设置 checked="checked" 时，该选项被默认选中
   	<input type="email" id="email" placeholder="Enter email">
 	</form>
 	```
+### QUESTION ###
+- Q1：为什么Markdown显示不出表单效果？
