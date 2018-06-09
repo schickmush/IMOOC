@@ -334,11 +334,7 @@ checked：当设置 checked="checked" 时，该选项被默认选中
     	<input type="submit" value="提交" name="submitBtn" />
 	</form> 
 	```
-> <form  method="post" action="save.php">
-    <label for="myName">姓名：</label>
-    <input type="text" value=" " name="myName " />
-    <input type="submit" value="提交" name="submitBtn" /><br>
-</form> 
+
 - 使用**重置按钮**，重置表单信息
 	```html
 	<input type="reset" value="重置">
@@ -351,10 +347,7 @@ checked：当设置 checked="checked" 时，该选项被默认选中
 	</form> 
 	```
  
-- form表单中的**label标签**
-label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用户改进了可用性。
-当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上
-如下例，点击“男”标签，单选框会自动选中
+- form表单中的**label标签**：label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用户改进了可用性。当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。如下例，点击“男”标签，单选框会自动选中
 	```html
 	<form>
   	<label for="male">男</label>
