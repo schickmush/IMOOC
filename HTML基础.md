@@ -1,21 +1,21 @@
 ## HTML基础课程 ##
 [课程链接:HTML+CSS基础课程](https://www.imooc.com/learn/9)
 ### 第一章 HTML介绍 ###
-1. HTML是网页内容的载体。CSS样式是表现。JavaScript用来实现网页上的特效效果。
-2. 认识HTML文件基本结构
+- HTML是网页内容的载体。CSS样式是表现。JavaScript用来实现网页上的特效效果。
+- 认识HTML文件基本结构
 	```html
 	<html>
 		<head>...</head>   
 		<body>...</body>
 	</html>
 	```
-3. HTML的代码注释
+- HTML的代码注释
 	```html
 	<!--注释文字-->
 	```
 
 ### 第二章 认识标签（第一部分） ###
-1. **head**标签：文档的头部描述了文档的各种属性和信息，包括文档的标题等。绝大多数文档头部包含的数据都不会真正作为内容显示给读者。以下标签可用在head部分
+- **head**标签：文档的头部描述了文档的各种属性和信息，包括文档的标题等。绝大多数文档头部包含的数据都不会真正作为内容显示给读者。以下标签可用在head部分
 	```html
 	<head>
 		<title>...</title>
@@ -26,30 +26,30 @@
 	</head>
 	```
 
-2. **body**标签：网页上显示的内容放在这里
+- **body**标签：网页上显示的内容放在这里
 
-3. **title**标签：网页的标题信息，它会出现在浏览器的标题栏中
+- **title**标签：网页的标题信息，它会出现在浏览器的标题栏中
 
-4. **p**标签：添加段落
+- **p**标签：添加段落
 
-5. **hx**标签：为你的网页添加标题，分为h1,h2,h3,h4,h5,h6，6个等级，重要性抵减
+- **hx**标签：为你的网页添加标题，分为h1,h2,h3,h4,h5,h6，6个等级，重要性抵减
 
-6. **strong**标签：粗体
+- **strong**标签：粗体
 
-7. **em**标签：斜体
+- **em**标签：斜体
 
-8. **br**标签：换行符
+- **br**标签：换行符
 
-9. **&nbsp**：添加一些空格
+- **&nbsp**：添加一些空格
 
-10. **hr**标签，添加水平横线
+- **hr**标签，添加水平横线
 
-11. **img**标签：添加图片
+- **img**标签：添加图片
 	```html
 	<img src="图片地址" alt="下载失败时的替换文本" title = "提示文本">
 	```
 
-12. **span**标签：为文字设置单独样式
+- **span**标签：为文字设置单独样式
 	```html
 	<html>
 	<head>
@@ -65,7 +65,7 @@
 	</html>
 	``` 
 
-13. **q**标签：短文本引用，添加引号
+- **q**标签：短文本引用，添加引号
 	```html
 	<html>
 	<head>
@@ -75,9 +75,9 @@
 	</body>
 	</html>
 	```
-> <p>周瑜确实配的上那句<q>聪明秀出为之英，胆略过人为之雄。</q></p> 
+	> <p>周瑜确实配的上那句<q>聪明秀出为之英，胆略过人为之雄。</q></p> 
 
-14. **blockquote**标签：长文本引用，独立成有缩进的段落
+- **blockquote**标签：长文本引用，独立成有缩进的段落
 	```html
 	<html>
 	<head>
@@ -89,11 +89,11 @@
 	</body>
 	</html> 
 	```
-> <p>大家都在忙于自认为最重要的事情，却没能享受到人生的乐趣，反而要吞下苦果？</p>
-<blockquote>暗淡轻黄体性柔，情疏迹远只香留。何须浅碧深红色，自是花中第一流。</blockquote>
-<p>这是李清照《咏桂》中的词句，在李清照看来，桂花暗淡青黄，性情温柔，淡泊自适，远比那些大红大紫争奇斗艳花值得称道。</p>
+	> <p>大家都在忙于自认为最重要的事情，却没能享受到人生的乐趣，反而要吞下苦果？</p>
+	> <blockquote>暗淡轻黄体性柔，情疏迹远只香留。何须浅碧深红色，自是花中第一流。</blockquote>
+	> <p>这是李清照《咏桂》中的词句，在李清照看来，桂花暗淡青黄，性情温柔，淡泊自适，远比那些大红大紫争奇斗艳花值得称道。</p>
 
-15. **address**标签：为网页加入地址信息（真实地址/邮箱地址），地址用斜体表示
+- **address**标签：为网页加入地址信息（真实地址/邮箱地址），地址用斜体表示
 	```html
 	<html>
 	<head>
@@ -103,9 +103,9 @@
 	</body> 
 	</html> 
 	```
-> <p>公司地址：<address>北京市西城区德外大街10号</address></p> 
+	> <p>公司地址：<address>北京市西城区德外大街10号</address></p> 
 
-16. **code**标签：加入一行代码
+- **code**标签：加入一行代码
 	```html
 	<html>
 	<head>
@@ -116,10 +116,10 @@
 	</body>
 	</html> 
 	```
-> <p>我们可能知道水平渐变的实现，类似这样：
-<code>{background-image:linear-gradient(left, red 100px, yellow 200px);}</code></p>
+	> <p>我们可能知道水平渐变的实现，类似这样：
+	> <code>{background-image:linear-gradient(left, red 100px, yellow 200px);}</code></p>
 
-17. **pre**标签：加入大段代码
+- **pre**标签：加入大段代码
 	```html
 	<head>
 	</head>
@@ -134,16 +134,16 @@
 	</body>
 	</html> 
 	```
-> <pre>
-var message="欢迎";
-for(var i=1;i<=10;i++)
-{
-    alert(message); 
-}
-</pre>
+	> <pre>
+	> var message="欢迎";
+	> for(var i=1;i<=10;i++)
+	> {
+   	>   alert(message); 
+	> }
+	> </pre>
 
 ### 第三章 认识标签（第二部分） ###
-1. 使用**ul - li**，添加信息列表
+- 使用**ul - li**，添加信息列表
 	```html
 	<ul>
 			<li>新闻一</li>
@@ -151,13 +151,13 @@ for(var i=1;i<=10;i++)
 			<li>新闻三</li>
 	</ul>
 	```
-> <ul>
-		<li>新闻一</li>
-		<li>新闻二</li>
-		<li>新闻三</li>
-</ul>
+	> <ul>
+	>	<li>新闻一</li>
+	>	<li>新闻二</li>
+	>	<li>新闻三</li>
+	> </ul>
 
-2. 使用**ol - li**，添加排行榜
+- 使用**ol - li**，添加排行榜
 	```html
 	<ol>
 			<li>排行第一名</li>
@@ -165,18 +165,18 @@ for(var i=1;i<=10;i++)
 			<li>排行第三名</li>
 	</ol>
 	```
-> <ol>
-		<li>排行第一名</li>
-		<li>排行第二名</li>
-		<li>排行第三名</li>
-</ol>
+	> <ol>
+	>	<li>排行第一名</li>
+	>	<li>排行第二名</li>
+	>	<li>排行第三名</li>
+	> </ol>
 
-3. **div**标签：把一些独立的逻辑部分划分出来
+- **div**标签：把一些独立的逻辑部分划分出来
 	```html
 	<div id='版块名称'>...</div>
 	```
 
-4. **table**标签：网页上的表格
+- **table**标签：网页上的表格
 **caption**标签：为表格添加标题和摘要 
 **五元素：table, tbody, tr（行）, th（表头）, td（表格）**
 Markdown中输入以下代码，表格前会出现许多空行，解决方法是将代码改为紧凑模式
@@ -205,21 +205,19 @@ Markdown中输入以下代码，表格前会出现许多空行，解决方法是
 	</table>
 	</body> 
 	```
-> <body><table summary="本表格记录2012年到2013年库存记录，记录包括U盘和耳机库存量"><caption>2012年到2013年库存记录</caption><tr><th>产品名称 </th><th>品牌 </th><th>库存量（个） </th><th>入库时间 </th></tr><tr><td>耳机 </td><td>联想 </td><td>500</td><td>2013-1-2</td></tr><tr><td>U盘 </td><td>金士顿 </td><td>120</td><td>2013-8-10</td></tr>
-</table>
-</body> 
-5. **a**标签：添加超链接
+	> <body><table summary="本表格记录2012年到2013年库存记录，记录包括U盘和耳机库存量"><caption>2012年到2013年库存记录</caption><tr><th>产品名称 </th><th>品牌 </th><th>库存量（个） </th><th>入库时间 </th></tr><tr><td>耳机 </td><td>联想 </td><td>500</td><td>2013-1-2</td></tr><tr><td>U盘 </td><td>金士顿 </td><td>120</td><td>2013-8-10</td></tr></table></body> 
+- **a**标签：添加超链接
 默认情况下链接的网页是在当前浏览器窗口中打开，但有时我们需要在新的浏览器窗口中打开
 	```html
 	<a  href="http://www.imooc.com"  title="点击进入慕课网">click here!</a>
 	```
-<a  href="http://www.imooc.com"  title="点击进入慕课网">click here!</a>
+	> <a  href="http://www.imooc.com"  title="点击进入慕课网">click here!</a>
 	```html
 	<a href="http://www.imooc.com" target="_blank">click here!</a>
 	```
-<a href="目标网址" target="_blank">click here!</a>
+	> <a href="目标网址" target="_blank">click here!</a>
 
-6. **mailto**标签：在网页中链接Email地址，能让访问者便捷向网站管理者发送电子邮件
+- **mailto**标签：在网页中链接Email地址，能让访问者便捷向网站管理者发送电子邮件
 	```html
 	<!--浏览器自动调用默认邮件程序，并在收件人框中自动填上收件人地址-->
 	<a href="malito:yy@imooc.com">发送</a>
@@ -246,7 +244,7 @@ Markdown中输入以下代码，表格前会出现许多空行，解决方法是
 	```
 
 ### 第四章 表单标签 ###
-1. **表单(form)**：可以把浏览者输入的数据传送到服务器端
+- **表单(form)**：可以把浏览者输入的数据传送到服务器端
 **action**：浏览者输入的数据被传送到的地方,比如一个PHP页面(save.php)
 **method**： 数据传送的方式（get/post）
 	```html
@@ -256,7 +254,7 @@ Markdown中输入以下代码，表格前会出现许多空行，解决方法是
 	<form    method="post"   action="save.php">...</form>
 	```
 
-2. 文本输入框、密码输入框
+- 文本输入框、密码输入框
 	```html
 	<form>
    	<input type="text/password" name="名称" value="文本" />
@@ -277,7 +275,7 @@ Markdown中输入以下代码，表格前会出现许多空行，解决方法是
   <input type="password" name="pass"><br>
 </form>
 
-3. **文本域(textarea)**：支持多行文本输入
+- **文本域(textarea)**：支持多行文本输入
 	```html
 	<textarea  rows="行数" cols="列数">文本</textarea>
 	```
@@ -292,7 +290,7 @@ Markdown中输入以下代码，表格前会出现许多空行，解决方法是
         <textarea cols="50" rows="10" >在这里输入内容...</textarea><br>
 </form>
 
-4. 单选框（radio）、复选框（checkbox）
+- 单选框（radio）、复选框（checkbox）
 checked：当设置 checked="checked" 时，该选项被默认选中
 同一组的单选按钮，name 取值一定要一致
 	```html
@@ -323,7 +321,7 @@ checked：当设置 checked="checked" 时，该选项被默认选中
 		<input type="checkbox" name="checkbox4" value="健身">健身<br>
 </form>
 
-5. 下拉列表框（select)，节省空间
+- 下拉列表框（select)，节省空间
 可实现单选和多选（multiple），进行多选时按下Ctrl键同时进行单击
 	```html
 	<form action="save.php" method="post" >
@@ -364,7 +362,7 @@ checked：当设置 checked="checked" 时，该选项被默认选中
       <option value="购物">购物</option>
     </select><br>
 </form>
-6. 使用**提交按钮**，提交数据
+- 使用**提交按钮**，提交数据
 	```html
 	<input   type="submit"   value="提交">
 	```
@@ -380,7 +378,7 @@ checked：当设置 checked="checked" 时，该选项被默认选中
     <input type="text" value=" " name="myName " />
     <input type="submit" value="提交" name="submitBtn" /><br>
 </form> 
-7. 使用**重置按钮**，重置表单信息
+- 使用**重置按钮**，重置表单信息
 	```html
 	<input type="reset" value="重置">
 	```
@@ -396,7 +394,7 @@ checked：当设置 checked="checked" 时，该选项被默认选中
     <input type="text" value=" " name="myName " />
     <input type="reset" value="重置" name="resetBtn" /><br>
 </form> 
-8. form表单中的**label标签**
+- form表单中的**label标签**
 label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用户改进了可用性。
 当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上
 如下例，点击“男”标签，单选框会自动选中
