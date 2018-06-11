@@ -278,68 +278,68 @@
 		这条语句的作用将元素从文档流中拖出来，然后使用left、right、top、bottom属性相对于其最接近的一个具有定位属性的父包含块进行绝对定位。如果不存在这样的包含块，则相对于body元素，即相对于浏览器窗口。
 		
 		如下面代码可以实现div元素相对于浏览器窗口向右移动100px，向下移动50px。
-	```css
-	div{
-    	width:200px;
-    	height:200px;
-    	border:2px red solid;
-    	position:absolute;
-    	left:100px;
-    	top:50px;
-	}
-	<div id="div1"></div>
-	```
+		```css
+		div{
+		width:200px;
+		height:200px;
+		border:2px red solid;
+		position:absolute;
+		left:100px;
+		top:50px;
+		}
+		<div id="div1"></div>
+		```
 	- 相对定位(position: relative)
 	
 		相对于以前的位置移动，移动的方向和幅度由left、right、top、bottom属性确定
 	
 		如下代码实现相对于以前位置向下移动50px，向右移动100px
-	```css
-	#div1{
-    	width:200px;
-    	height:200px;
-    	border:2px red solid;
-    	position:relative;
-    	left:100px;
-    	top:50px;
-	}
-	<div id="div1"></div>
-	```
+		```css
+		#div1{
+		width:200px;
+		height:200px;
+		border:2px red solid;
+		position:relative;
+		left:100px;
+		top:50px;
+		}
+		<div id="div1"></div>
+		```
 	- 固定定位(position: fixed)
 	
 		与absolute定位类型类似，但它的相对移动的坐标是**视图（屏幕内的网页窗口）**本身。由于视图本身是固定的，它不会随浏览器窗口的滚动条滚动而变化，除非你在屏幕中移动浏览器窗口的屏幕位置，或改变浏览器窗口的显示大小，因此固定定位的元素会始终位于浏览器窗口内视图的某个位置，不会受文档流动影响
 	
 		以下代码可以实现相对于浏览器视图向右移动100px，向下移动50px。并且拖动滚动条时位置固定不变。
-	```css
-	#div1{
-    	width:200px;
-    	height:200px;
-    	border:2px red solid;
-    	position:fixed;
-    	left:100px;
-    	top:50px;
-	}
-	```
+		```css
+		#div1{
+		width:200px;
+		height:200px;
+		border:2px red solid;
+		position:fixed;
+		left:100px;
+		top:50px;
+		}
+		```
 	- Relative与Absolute组合使用（position:relative）
 	
 		相对于其它元素进行定位
 		
 		参照定位的元素必须是相对定位元素的前辈元素
-	```css
-	#box1{
-    	width:200px;
-    	height:200px;
-    	position:relative;    /*参照定位的元素必须加入position:relative*/
-	}
-	#box2{
-    	position:absolute;  /*定位元素加入position:absolute，便可以进行偏移定位了*/
-    	top:20px;
-    	left:30px;         
-	}
-	<div id="box1">
-    	<div id="box2">相对参照元素进行定位</div>
-	</div>
-	```
+		```css
+		#box1{
+		width:200px;
+		height:200px;
+		position:relative;    /*参照定位的元素必须加入position:relative*/
+		}
+		#box2{
+		position:absolute;  /*定位元素加入position:absolute，便可以进行偏移定位了*/
+		top:20px;
+		left:30px;         
+		}
+		<div id="box1">
+		<div id="box2">相对参照元素进行定位</div>
+		</div>
+		```
 
 ### 第八章 CSS代码缩写，占用更少带宽
 - 盒模型代码简写
