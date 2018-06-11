@@ -1,4 +1,5 @@
 ## sublime基础 ##
+[课程链接：前端开发工具技巧介绍—Sublime篇](https://www.imooc.com/learn/40)
 ### 快捷键 ###
 -  快速找到指定元素：Ctrl + P，Go to Anything
 - 快速替换：Ctrl +H，如把页面中所有的mode变成pattern
