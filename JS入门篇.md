@@ -162,6 +162,8 @@
 
 ### 第三章 DOM操作 ###
 - 文档对象模型DOM（Document Object Model）：定义访问和处理HTML文档的标准方法。DOM 将HTML文档呈现为带有元素、属性和文本的树结构（节点树）。
+
+	![](https://github.com/schickmush/IMOOC/blob/master/resources/%E8%8A%82%E7%82%B9%E6%A0%91.jpg)
 - 三种常见的DOM节点:
 	- 元素节点：上图中`<html>`、`<body>`、`<p>`等都是元素节点，即标签。
 	- 文本节点:向用户展示的内容，如`<li>...</li>`中的JavaScript、DOM、CSS等文本。
