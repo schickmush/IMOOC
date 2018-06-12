@@ -64,12 +64,6 @@
 		</body>
 		</html> 
 		```
-		<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>函数调用</title><script type="text/javascript">
-		      function contxt()
-		      {
-		         alert("哈哈，调用函数了!");
-		      }
-		   </script></head><body><form><input type="button"  value="点击我" onclick="contxt()" />  </form></body></html> 
 
 ### 第二章 常用互动方法 ###
 - 输出内容
