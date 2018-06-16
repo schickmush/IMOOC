@@ -216,20 +216,18 @@
 
 ### 第四章 事件响应，网页交互 ###
 - 事件：是可以被 JavaScript 侦测到的行为。 网页中的每个元素都可以产生某些可以触发 JavaScript 函数或程序的事件。
-- 主要事件表					
-
->| 事件 | 说明 | 
-| - | :-: |
-| onclick | 鼠标单击事件|
-| onmouseover | 鼠标经过事件 |
-|onmouseout|鼠标移开事件|
-|onchange|文本框内容改变事件|
-|onselect|文本框内容被选中事件|
-|onfocus|光标聚集|
-|onblur|光标离开|
-|onload|网页导入|
-|onunload|关闭网页|
-
+- 主要事件			
+	```
+	onclick        //鼠标单击事件
+	onmouseover    //鼠标经过事件
+	onmouseout     //鼠标移开事件
+	onchange       //文本框内容改变事件
+	onselect       //文本框内容被选中事件
+	onfocus        //光标聚集 
+	onblur         //光标离开
+	onload         //网页导入
+	onunload       //关闭网页
+	```
 - 鼠标单击事件( onclick ）
 	```
 	<html>
@@ -251,6 +249,7 @@
 	</html>
 	```
 - 鼠标经过事件（onmouseover）/鼠标移开事件（onmouseout）
+	
 	鼠标经过"确定"按钮时，触发onmouseover事件，调用函数message()，弹出消息框，代码如下:
 	```
 	<html>
@@ -273,7 +272,9 @@
 	密码:<input name="password" type="password" ><input name="确定" type="button" value="确定" onmouseover="message()" />
 	<br>
 - 光标聚焦事件（onfocus）/失焦事件（onblur）
+	
 	当将光标移到文本框内时，即焦点在文本框内，触发onfocus 事件，并调用函数message()。
+	
 	当光标离开当前获得聚焦对象的时候，触发onblur事件，同时执行被调用的程序。
 	```
 	<html>
@@ -295,7 +296,9 @@
 	</html>
 	```
 - 内容选中事件（onselect）/文本框内容改变事件（onchange）
+	
 	当文本框或者文本域中的文字被选中时，触发onselect事件，同时调用的程序就会被执行。
+	
 	通过改变文本框的内容来触发onchange事件，同时执行被调用的程序。
 	```
 	<html>
@@ -319,6 +322,7 @@
 	   <textarea name="summary" cols="60" rows="5" onselect= "message()">请写入个人简介，不少于200字！</textarea>
 	</form>
 - 加载事件（onload）
+	
 	事件会在页面加载完成后，立即发生onload事件，同时执行被调用的程序，事件写在`<body>`标签内
 	```
 	<html>
@@ -336,6 +340,7 @@
 	</html> 
 	```
 - 卸载事件（onunload）
+	
 	当用户退出页面时（页面关闭、页面刷新等），触发onUnload事件，同时执行被调用的程序。
 	```
 	<html>
@@ -439,6 +444,7 @@
 	w,w,w,.,i
 	```
 - **Math** 对象
+	
 	Math对象属性
 	```
 	Math.PI       //返回圆周率
@@ -462,6 +468,7 @@
 	valueOf()         //返回Math对象的原始值
 	```
 - **Array** 数组对象
+	
 	数组属性
 	```
 	array.length
@@ -539,6 +546,7 @@
 
 ### 第六章 浏览器对象 ###
 - JavaScript 计时器
+	
 	交互时间：以毫秒计（1s=1000ms）。
 	```
 	setTimeout(代码,交互时间)    //指定的延迟时间之后执行代码
@@ -592,7 +600,9 @@
 	</body>
 	```
 - **History** 对象
+	
 	记录了用户曾经浏览过的页面(URL)，并可以实现浏览器前进与后退相似导航的功能。
+	
 	语法：
 	```
 	window.history.[属性|方法]
@@ -610,7 +620,9 @@
 	go(1)        //相当于forward()
 	```
 - **Location** 对象
+	
 	用于获取或设置窗体的URL，并且可以用于解析URL。
+	
 	语法：
 	```
 	location.[属性|方法]
@@ -633,6 +645,7 @@
 	replace()    //用新的文档替换当前文档
 	```
 - **Navigator** 对象
+	
 	包含有关浏览器的信息，通常用于检测浏览器与操作系统的版本。
 	```
 	appCodeName     //浏览器代码名的字符串表示
@@ -642,6 +655,7 @@
 	userAgent       //返回由客户机发送服务器的user-agent头部的值
 	```
 - **screen** 对象
+	
 	语法：
 	```
 	window.screen.属性
