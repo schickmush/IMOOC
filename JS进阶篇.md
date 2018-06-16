@@ -545,6 +545,7 @@
 	```
 
 ### 第六章 浏览器对象 ###
+![](https://github.com/schickmush/IMOOC/blob/master/resources/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AF%B9%E8%B1%A1.jpg)
 - JavaScript 计时器
 	
 	交互时间：以毫秒计（1s=1000ms）。
@@ -620,6 +621,7 @@
 	go(1)        //相当于forward()
 	```
 - **Location** 对象
+![](https://github.com/schickmush/IMOOC/blob/master/resources/Location%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E5%9B%BE%E7%A4%BA.png)
 	
 	用于获取或设置窗体的URL，并且可以用于解析URL。
 	
