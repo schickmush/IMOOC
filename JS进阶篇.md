@@ -269,8 +269,6 @@
 	</body>
 	</html> 
 	```
-	密码:<input name="password" type="password" ><input name="确定" type="button" value="确定" onmouseover="message()" />
-	<br>
 - 光标聚焦事件（onfocus）/失焦事件（onblur）
 	
 	当将光标移到文本框内时，即焦点在文本框内，触发onfocus 事件，并调用函数message()。
@@ -318,9 +316,6 @@
 	</body>
 	</html> 
 	```
-	<form>个人简介：
-	   <textarea name="summary" cols="60" rows="5" onselect= "message()">请写入个人简介，不少于200字！</textarea>
-	</form>
 - 加载事件（onload）
 	
 	事件会在页面加载完成后，立即发生onload事件，同时执行被调用的程序，事件写在`<body>`标签内
