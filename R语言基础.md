@@ -43,10 +43,10 @@
 	```
 	```
 	> x1
-			[,1]	[,2]
-	[1,]	1		4
-	[2,]	2		5
-	[3,]	3		6
+	     [,1] [,2]
+	[1,]    1    4
+	[2,]    2    5
+	[3,]    3    6
 	> dim(x1)  #查看维度
 	[1] 3 2
 	> attributes(x1)  #查看属性
@@ -60,9 +60,9 @@
 	```
 	```
 	> y
-			[,1]	[,2]	[,3]
-	[1,]	1		3		5
-	[2,]	2		4		6
+	     [,1] [,2] [,3]
+	[1,]    1    3    5
+	[2,]    2    4    6
 	```
 	方法三：array
 	```
@@ -76,9 +76,9 @@
 	```
 	```
 	> x <- matrix(1:6,nrow=2,ncol=3)
-	> dimnames(x) <- list(c("a,"b"),c("c","d","e"))  #给矩阵的行列命名
+	> dimnames(x) <- list(c("a","b"),c("c","d","e"))  #给矩阵的行列命名
 	> x
-		c d e
+	  c d e
 	a 1 3 5
 	b 2 4 6
 	```
@@ -88,10 +88,10 @@
 	> x
 	[1] female female male male female
 	Levels:female male   #当前因子包含两个水平，在前的为基线水平
-	> table(x)   #查看两个水平出现的频率
+	> table(x)    #查看两个水平出现的频率
 	x
-	female	male
-		3		2
+	female   male 
+	     3      2 
 	> unclass(x)  #1代表female，2代表male
 	[1] 1 1 2 2 1
 	```
