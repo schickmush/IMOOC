@@ -241,7 +241,7 @@
     	margin:10px;    
 	}
 	```
-	![](https://github.com/schickmush/IMOOC/blob/master/resources/%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6.png)
+	![](https://github.com/schickmush/IMOOC/blob/master/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%AF%87/IMG/%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6.png)
 - 盒模型--填充：padding
 
 	可按顺时针简写，上右下左
