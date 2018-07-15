@@ -616,7 +616,7 @@
 	go(1)        //相当于forward()
 	```
 - **Location** 对象
-![](https://github.com/schickmush/IMOOC/blob/master/resources/Location%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E5%9B%BE%E7%A4%BA.png)
+![](https://github.com/schickmush/IMOOC/blob/master/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%AF%87/IMG/Location%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E5%9B%BE%E7%A4%BA.png)
 	
 	用于获取或设置窗体的URL，并且可以用于解析URL。
 	
