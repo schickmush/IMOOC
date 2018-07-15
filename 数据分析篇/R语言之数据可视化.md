@@ -25,8 +25,10 @@
 ### 第二章 基本绘图系统 ###
 - 绘图包：graphics包
 - plot ( x,y ) 函数：
+	
 	重要参数：xlab /ylab（坐标轴标签）/lwd（线宽）/lty（线类型）/pch（点类型）/col（颜色）
 - Par( ) 函数：用于设置全局参数（作用于R中的所有plot绘图）
+	
 	重要参数：bg（背景颜色），mar（边距），las（汉字排版）mfrow（把画板分为几行）mfcol（把画板分为几列）
 	```
 	> par("bg")
@@ -74,10 +76,11 @@
 		col=c("red","blue","black"),
 		legend=c("Sep","May","other"))
 	```
-	插入图片1
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/1.png)
 
 ### 第三章 Lattice绘图系统 ###
 - Lattice包函数：
+	
 	xyplot / bwplot / histogram / stripplot / dotplot / splom / levelplot / contourplot
 - 特别适用于观测变量间的交互：在变量z的不同水平，变量y如何随变量x变化
 - 格式：xyplot ( y ~ x | f * g, data )
@@ -92,7 +95,7 @@
 	> airquality$Month <- factor(airquality$Month)  #首先将月份转换为分类变量
 	> xyplot(Temp~Ozone | Month,data=airquality,layout=c(5,1))
 	```
-	插入图2
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/2.PNG)
 	```
 	> library(lattice)
 	> set.seed(1)           #设置种子点，使每次产生的随机数一样
@@ -106,7 +109,7 @@
 		panel.lmline(x,y,col="red")    #添加回归线拟合
 		})
 	```
-	插入图3
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/3.PNG)
 
 ### 第四章 ggplot2绘图系统 ###
 - 拥有独特的图层（layer）
@@ -129,43 +132,44 @@
 	> qplot(Wind,Temp,data=airquality,color=I("red"))  #统一颜色
 	> qplot(Wind,Temp,data=airquality,size=I(3))       #统一大小 
 	```
-	插入图片4
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/4.PNG)
 	```
 	#根据点，拟合回归线，阴影部分是置信空间
 	> qplot(Wind,Temp,data=airquality,geom=c("point","smooth"))
 	```
-	插入图5
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/5.PNG)
 	```
 	> qplot(Wind,Temp,data=airquality,facets=.~Month)  #每列代表不同的月份
 	> qplot(Wind,Temp,data=airquality,facets=Month~.)  #每行代表不同的月份
 	```
-	插入图6
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/6.PNG)
 	```
 	#只传入一个变量，会默认为柱状图
 	> qplot(Wind,data=airquality,facets=Month~.)
 	```
-	插入图7
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/7.PNG)
 	```
 	#只传入y，不传入x，散点图，会按照风速出现的顺序绘制
 	> qplot(y=Wind,data=airquality,facets=Month ~.)
 	```
-	插入图8
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/8.PNG)
 	```
 	#累加的柱状图，不同月份用不同颜色表示
 	> qplot(Wind,data=airquality,fill=Month)
 	```
-	插入图9
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/9.PNG)
 	```
 	#频率分布的轮廓图
 	> qplot(Wind,data=airquality,geom="density",color=Month)
 	```
-	插入图10
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/10.PNG)
 	```
 	#频率分布的点阵图
 	> qplot(Wind,data=airquality,geom="dotplot")
 	```
-	插入图11
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/11.PNG)
 - **ggplot ( ) 函数** 
+	
 	分图层。第一个参数是数据集，第二个参数是美学相关的层，第三个参数是统计信息层。
 	```
 	#散点图
@@ -209,7 +213,7 @@
 		stat_smooth(method="lm",se=FALSE)+
 		scale_color_manual("Month",values=myColors)
 	```
-	插入图12
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/12.PNG)
 	```
 	#每个月一列，分列显示
 	> ggplot(airquality,aes(Wind,Temp,col=factor(Month)))+
@@ -218,7 +222,7 @@
 		scale_color_manual("Month",values=myColors)+
 		facet_grid(.~Month)
 	```
-	插入图13
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/13.PNG)
 	```
 	#改变主题
 	> ggplot(airquality,aes(Wind,Temp,col=factor(Month)))+
@@ -228,8 +232,9 @@
 		facet_grid(.~Month)+
 		theme_classic()
 	```
-	插入图14
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/14.PNG)
 - **RColor**
+	
 	grDevice包：**colorRamp()** & **colorRampPalette()**
 	```
 	#用RGB表示颜色
@@ -275,7 +280,7 @@
 	> pal <- colorRampPalette(cols)   
 	> image(volcano,col=pal(20))      #以3个颜色为端点，取20个颜色
 	```
-	插入图15
+	![](https://github.com/schickmush/IMOOC/blob/master/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%AF%87/IMG/15.PNG)
 
 - R支持的图形设备
 	```
