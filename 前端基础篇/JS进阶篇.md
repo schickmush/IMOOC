@@ -540,7 +540,7 @@
 	```
 
 ### 第六章 浏览器对象 ###
-![](https://github.com/schickmush/IMOOC/blob/master/resources/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AF%B9%E8%B1%A1.jpg)
+![](https://github.com/schickmush/IMOOC/blob/master/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%AF%87/IMG/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AF%B9%E8%B1%A1.jpg)
 - JavaScript 计时器
 	
 	交互时间：以毫秒计（1s=1000ms）。
