@@ -203,13 +203,13 @@
 	- 将盒子看为页面元素，盒子内容可以为文字、图片或其他标签元素
 	- 内填充 padding
 		
-		![](https://github.com/schickmush/IMOOC/blob/master/resources/padding.PNG)
+		![](https://github.com/schickmush/IMOOC/blob/master/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%AF%87/IMG/padding.PNG)
 	- 外边距 margin
 	
-		![](https://github.com/schickmush/IMOOC/blob/master/resources/margin.PNG)
+		![](https://github.com/schickmush/IMOOC/blob/master/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%AF%87/IMG/margin.PNG)
 	- 边框 border
 		
-		![](https://github.com/schickmush/IMOOC/blob/master/resources/border.PNG)
+		![](https://github.com/schickmush/IMOOC/blob/master/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%AF%87/IMG/border.PNG)
 	- 盒子的内填充、外边距、边框都有四个方向
 	- 关于盒子模型，我们所学的块状标签都具备盒子模型的特征
 
@@ -241,7 +241,7 @@
     	margin:10px;    
 	}
 	```
-	![](https://github.com/schickmush/IMOOC/blob/master/resources/%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6.png)
+	![](https://github.com/schickmush/IMOOC/blob/master/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%AF%87/IMG/%E5%AE%BD%E5%BA%A6%E5%92%8C%E9%AB%98%E5%BA%A6.png)
 - 盒模型--填充：padding
 
 	可按顺时针简写，上右下左
